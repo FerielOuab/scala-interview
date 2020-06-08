@@ -1,4 +1,16 @@
 1) Explain REST and RESTful
+REST (REpresentational State Transfer) is basically an architectural style of development having some principles:
+It should be stateless
+It should access all the resources from the server using only URI
+It does not have inbuilt encryption
+It does not have session
+It uses one and only one protocol - HTTP
+For performing CRUD operations, it should use HTTP verbs such as get, post, put and delete
+It should return the result only in the form of JSON or XML, atom, OData etc. (lightweight data )
+REST based services follow some of the above principles and not all
+RESTFUL services means it follows all the above principles.
+
+
 
 2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
 
@@ -14,5 +26,13 @@ if it does not get any response then it sends back the request.
 HTTP is a stateless protocol.
 
 5) Explain the difference between a GET and a POST (like how are sent the parameters)
+GET requests have length restrictions/POST requests have no restrictions on data length.
+The GET and POST are two different types of HTTP requests. GET is used for viewing something,
+without changing it, while POST is used for changing something.
+Both GET and POST method is used to transfer data from client to server in HTTP protocol but
+Main difference between POST and GET method is that GET carries request parameter appended in URL
+string while POST carries request parameter in message body which makes it more secure way of transferring data from client to server in http protocol.
 
 6) You can’t work out how to solve a coding problem. What do you do to find the answer??
+I'll first try to debug step by step, by printing values in different part of the code. If it's not working, I just try to think about
+a different way to solve the problem, finally, I type the issue that I have on the Internet to see if other developers have the same problem in order to fix it.
