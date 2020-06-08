@@ -1,4 +1,3 @@
-
 1) Explain REST and RESTful
 
 2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
@@ -7,6 +6,13 @@
 
 4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
 
+Stateless protocol is a protocol in which client sends a request to the server
+and the server responds back according to the current state.
+
+A stateful protocol is a protocol in which the client sends a request to the server then it expects a response,
+if it does not get any response then it sends back the request.
+HTTP is a stateless protocol.
+
 5) Explain the difference between a GET and a POST (like how are sent the parameters)
 
-6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+6) You can’t work out how to solve a coding problem. What do you do to find the answer??
