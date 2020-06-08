@@ -4,7 +4,7 @@ object WhatsWrong1 {
 
   trait Interface {
     val city: String
-    val support: String = s"Ici c'est $city !"
+    override def toString = s"Ici c'est $city !"
   }
 
   case object Supporter extends Interface {
@@ -12,6 +12,6 @@ object WhatsWrong1 {
     override val city = "Paris"
   }
 
-  Supporter.city //What does this print ?
-  Supporter.support //What does this print and why ? How to fix it ?
+  println(Supporter.city) //What does this print ?
+  println(Supporter.toString) //What does this print and why ? How to fix it ?
 }
